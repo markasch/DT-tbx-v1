@@ -1,10 +1,10 @@
 ---
 layout: page
-title: projects
+title: twins
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A growing collection digital twin projects.
 nav: true
-display_categories: [work, fun]
+display_categories: [work, twin]
 horizontal: false
 ---
 <div class="projects">

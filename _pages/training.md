@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /teaching/
+permalink: /training/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Materials for training courses that are offered. Replace this text with your description.
 nav: true
 ---
 
