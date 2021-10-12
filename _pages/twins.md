@@ -1,10 +1,10 @@
 ---
 layout: page
 title: twins
-permalink: /projects/
+permalink: /twins/
 description: A growing collection digital twin projects.
 nav: true
-display_categories: [work, twin]
+display_categories: [work, industrial]
 horizontal: false
 ---
 <div class="projects">

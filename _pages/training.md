@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /training/
-title: teaching
+title: training
 description: Materials for training courses that are offered. Replace this text with your description.
 nav: true
 ---
