@@ -4,7 +4,7 @@ title: twins
 permalink: /twins/
 description: A growing collection digital twin projects.
 nav: true
-display_categories: [work, industrial]
+display_categories: [academic, industrial]
 horizontal: false
 ---
 <div class="projects">
