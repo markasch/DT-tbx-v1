@@ -2,7 +2,7 @@
 layout: page
 title: twins
 permalink: /twins/
-description: A growing collection digital twin projects.
+description: A growing collection of digital twin projects.
 nav: true
 display_categories: [academic, industrial]
 horizontal: false
