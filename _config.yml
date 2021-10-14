@@ -6,7 +6,7 @@ title: DT-tbx website # the website title (if blank, full name will be used inst
 first_name: Mark
 middle_name: A.
 last_name: Asch
-email: asch.mark1@gmail.com
+email: mark.asch@u-picardie.fr
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
  Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -187,7 +187,7 @@ scholar:
 # Jekyll Diagrams
 # -----------------------------------------------------------------------------
 
-jekyll-diagrams:
+#jekyll-diagrams:
     # configuration, see https://github.com/zhustec/jekyll-diagrams.
     # feel free to comment out this section if not using jekyll diagrams.
 
