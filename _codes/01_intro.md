@@ -5,7 +5,7 @@ description: introduction
 img: /assets/img/chap01intro.jpg
 importance: 1
 category: part1
-github: ../DT-tbx-examples/01intro
+github: ../../DT-tbx-examples/01intro
 ---
 
 Here are the code examples for Chapter 1...
