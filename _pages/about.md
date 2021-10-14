@@ -6,7 +6,7 @@ description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: mark103_br.jpg
+  image: book0.jpg
   address: >
     <p>LAMFA, CNRS-UMR 7352</p>
     <p>Universite de Picardie Jules Verne</p>

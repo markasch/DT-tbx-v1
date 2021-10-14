@@ -102,6 +102,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  codes:
+    output: true
+    permalink: /codes/:path/
 
 news_limit: 5
 
