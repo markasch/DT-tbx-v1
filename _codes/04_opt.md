@@ -1,10 +1,10 @@
 ---
 layout: page
-title: chapter
-description: proba-stat
-img: /assets/img/3.jpg
-importance: 2
-category: PartI
+title: chapter 4
+description: optimization
+img: /assets/img/chap04opt.jpg
+importance: 3
+category: part1
 ---
 
 Every project has a beautiful feature showcase page.

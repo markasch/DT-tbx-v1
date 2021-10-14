@@ -1,11 +1,14 @@
 ---
 layout: page
-title: chapter 1 - introduction
-description: a project with a background image
-img: /assets/img/12.jpg
+title: chapter 1 
+description: introduction
+img: /assets/img/chap01intro.jpg
 importance: 1
-category: Part_I
+category: part1
+github: markasch/DT-tbx-examples/01intro
 ---
+
+Here are the code examples for Chapter 1...
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.

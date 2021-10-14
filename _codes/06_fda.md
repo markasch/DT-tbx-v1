@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
+title: chapter 6
+description: functional data analysis
+img: /assets/img/chap06fda.jpg
 importance: 4
-category: industrial
+category: part1
 ---
 
 Every project has a beautiful feature showcase page.

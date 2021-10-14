@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: /assets/img/1.jpg
-importance: 3
-category: industrial
+title: chapter 2
+description: proba-stat
+img: /assets/img/chap02probaa.jpg
+importance: 2
+category: part1
 ---
 
 Every project has a beautiful feature showcase page.

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: chapter
-description: proba-stat
-img: /assets/img/3.jpg
-importance: 2
-category: PartI
+title: chapter 3
+description: model simulation
+img: /assets/img/chap03sim.jpg
+importance: 3
+category: part2
 ---
 
 Every project has a beautiful feature showcase page.
