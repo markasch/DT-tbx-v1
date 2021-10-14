@@ -2,7 +2,7 @@
 layout: page
 title: codes
 permalink: /codes/
-description: All the codes for book examples.
+description: Codes for all examples in the book. Open for detailed list, or click on the Github icon for direct access.
 nav: true
 horizontal: false
 ---
