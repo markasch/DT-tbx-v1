@@ -2,10 +2,16 @@
 layout: page
 permalink: /training/
 title: training
-description: Materials for training courses that are offered. Replace this text with your description.
+description: Materials for training courses that are offered. 
 nav: true
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+Based on over 30 years of teaching experience, I can propose personalized training sessions and courses at different levels.
 
-Organize your courses by years, topics, or universities, however you like!
+- Introduction to Inverse Problems and Data Assimilation
+- Bayesian Methods for Uncertainty Quantification
+- Digital Twins: from Model-based to Data-Driven
+- Digital Twins for Management and Sovereignty
+- Numerical Methods for Digital Twins
+- Machine Learning for Digital Twins
+- Deployment of Digital Twins 
