@@ -28,8 +28,8 @@ Here are the code examples for Chapter 3.
 - [Example 3.32](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p32_poisson_sparse_FD.ipynb) 2D Poisson equation for electrostatics with different solvers.
 - [Example 3.33](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p33_heat_CN.m) 1D heat equation with Crank-Nicolson scheme.
 - [Example 3.34](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p34_heat_periodic.ipynb) 1D heat equation with explicit and implicit schemes.
-- [Example 3.35](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p34_wave_abc) 2D wave equation with absorbing boundary conditions.
-- [Example 3.36](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p34_wave_abc) 2D wave equation with absorbing boundary conditions.
+- [Example 3.35](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p35_wave_abc) 2D wave equation with absorbing boundary conditions.
+- [Example 3.36](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p36_wave2D.ipynb) 2D wave equation with very efficient implementation.
 
 ### finite element methods
 - [Example 3.39](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p39_electro.edp) 2D elctrostatics with Dirichlet conditions.
