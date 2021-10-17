@@ -33,3 +33,12 @@ Here are the code examples for Chapter 3.
 
 ### Finite Element Methods
 - [Example 3.39](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p39_electro.edp) 2D elctrostatics with Dirichlet conditions
+- [Example 3.40](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p40_poisson2D_conv.edp) 2D Poisson equation convergence analysis
+- [Example 3.41](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p41_poisson2D_dir_neu.edp) 2D Poisson equation with Dirichlet and Neumann conditions
+- [Example 3.43](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p43_ell_NL_mult.edp) Nonlinear elliptic equation with Picard iteration
+- [Example 3.44](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p44_ell_NL_newton.edp) Nonlinear elliptic equation with Newton iteration
+- [Example 3.45](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p45_ell_NL_add.edp) Nonlinear elliptic equation with additive term
+
+
+
+
