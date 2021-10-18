@@ -22,7 +22,7 @@ Here are the code examples for Chapter 3.
 ### finite difference methods
 - [Example 3.29](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p29_transport) solution of a transport equation by different methods.
 - [Example 3.30](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p30_Lap_Neumann.m) Laplace equation with Neumann boundary condition.
-- [Example 3.31](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p31_Lap_2D) 2D Poisson equation in L-shaped geometry.
+- [Example 3.31](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p31_Laplace_2D) 2D Poisson equation in L-shaped geometry.
 - [Example 3.32](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p32_poisson_sparse_FD.ipynb) 2D Poisson equation for electrostatics with different solvers.
 - [Example 3.33](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p33_heat_CN.m) 1D heat equation with Crank-Nicolson scheme.
 - [Example 3.34](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p34_heat_periodic.ipynb) 1D heat equation with explicit and implicit schemes.
@@ -39,9 +39,9 @@ Here are the code examples for Chapter 3.
 
 ### stochastic simulation (monte-carlo methods)
 - [Example 3.46](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p46_MC_integration) Monte-Carlo integration.
-- [Example 3.47](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p47_MC_integration) Monte-Carlo integration--convergence study.
-- [Example 3.48](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p48_MC_importance) importance sampling for variance reduction.
-- [Example 3.49](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p49_MC_reject) rejection sampling for variance reduction.
+- [Example 3.47](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p47_MC_convg.ipynb) Monte-Carlo integration--convergence study.
+- [Example 3.48](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p48_MC_importance.ipynb) importance sampling for variance reduction.
+- [Example 3.49](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p49_MC_reject.ipynb) rejection sampling for variance reduction.
 - [Example 3.56](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p56_mcMH.R) Metropolis-Hasting MCMC for computing a posterior.
 - Example 3.57 -- see Example 3.56.
 - [Example 3.58](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p58_MCMC_simple.ipynb) Simple MCMC for a Gaussian posterior.
