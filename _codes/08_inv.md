@@ -10,5 +10,6 @@ github: https://github.com/markasch/DT-tbx-examples/blob/master/08inv
 
 Here are the code examples for Chapter 8.
 
-- [Example 8.5](https://github.com/markasch/DT-tbx-examples/blob/master/06fda/x6p2_fda_tests.R) basics of fda
-- Example 6.3 - see Example 6.2
+- [Example 8.5](https://github.com/markasch/DT-tbx-examples/blob/master/08inv/x8p5_duffing) Duffing's equation
+- [Example 8.17](https://github.com/markasch/DT-tbx-examples/blob/master/08inv/x8p17_inv_nlin_GN.m) Gauss-Newton method for nonlinear inversion
+- [Example 8.18](https://github.com/markasch/DT-tbx-examples/blob/master/08inv/x8p18_inv_nlin_LM) Levenberg-Marquardt method for nonlinear inversion
