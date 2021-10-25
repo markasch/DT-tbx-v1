@@ -13,7 +13,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-This is the companion website for... a short description of the [book](https://www.siam.org/publications/books/book-series) will go here.
+This is the companion website for **A Toolbox for Digital Twins: from Model-based to Data-driven**. A  short description of the [book](https://www.siam.org/publications/books/book-series) will go here.
 
 A short biography will be placed here. Link to my [homepage](http://masch.perso.math.cnrs.fr). 
 
