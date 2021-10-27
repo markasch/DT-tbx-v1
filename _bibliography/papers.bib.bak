@@ -43,7 +43,6 @@
   booktitle = {International Joint Conference on Neural Networks (IJCNN)},
   title     = {{DOCC10}: {O}pen access dataset of marine mammal transient studies and end-to-end {CNN} classification},
   year      = {2020},
-  selected  = {true}
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
