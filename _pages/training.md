@@ -2,11 +2,11 @@
 layout: page
 permalink: /training/
 title: training
-description: Materials for training courses that are offered. 
+description: Description of training courses proposed. 
 nav: true
 ---
 
-Based on many years of industriql consulting and teaching experience, I can propose personalized training sessions and courses at different levels.
+Based on many years of industrial consulting and teaching experience, I can propose personalized training sessions and courses at different levels.
 
 - Introduction to Inverse Problems and Data Assimilation
 - Bayesian Methods for Uncertainty Quantification
