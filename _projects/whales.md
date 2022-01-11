@@ -7,72 +7,22 @@ importance: 3
 category: environmental
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+The objective is to develop a digital twin of a  sperm-whale in the framework of the national AI chair [ADSIL](https://bioacoustics.lis-lab.fr/). This twin will play an important role in monitoring the biodiversity of this endangered species.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+- CNRS Journal made a nice [video](https://youtu.be/Kn_-xLzz5pg) of the preliminary phases of the project.
+- A recent [talk](/DT-tbx-v1/assets/pdf/Asch_NN_4_IP.pdf) describes a neural network based approach for solving the related direct and inverse problems. 
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The first stages of the twin's development are described in detail in Maxence Ferrari's [thesis](https://hal.archives-ouvertes.fr/tel-03078625). 
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+The twin will provide a complete emission-transmission-reception chain of the sperm whale's sonar system, which is known to be the most powerful in the animal kingdom. The inverse problem that we want to study entails charcterization of the biosonar source signal, its generation, its propagation inside the head---the so-callled leaky bent horn model---and then into the surrounding environment, where it is used for communication and for hunting.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+We are currently implementing a comparison between:
+
+- a classical adjoint approach, based on variational calculus, as described in {% cite Asch2016 %}
+- a physics-constrained neural network approach, as described in this [blog post](/DT-tbx-v1/blog/2022/nn4pde/) and in the [book](https://www.siam.org/publications/books/book-series).
 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+References
+----------
 
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-```
+{% bibliography --cited %}
