@@ -11,7 +11,7 @@ Knowledge o underwater sediment properties is important in different environment
 
 - sonar communications,
 - biodiversity monitoring (see this [twin](/DT-tbx-v1/projects/whales/)),
-- detection of buried objects (see this [twin]/DT-tbx-v1/projects/flints/).
+- detection of buried objects (see this [twin](/DT-tbx-v1/projects/flints/).
 
 Over the ten-year period 2001-2011, my group was involved in numerous projects, leading up to a three-week mission at sea, where  real-time inversion was performed using sockets, as described in this [post](/DT-tbx-v1/blog/2021/DT-stereo/).
 
