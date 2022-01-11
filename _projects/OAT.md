@@ -7,72 +7,54 @@ importance: 2
 category: environmental
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Knowledge o underwater sediment properties is important in different environmental contexts. It is needed for: 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+- sonar communications,
+- biodiversity monitoring (see this [twin](/DT-tbx-v1/projects/whales/)),
+- detection of buried objects (see this [twin]/DT-tbx-v1/projects/flints/).
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Over the ten-year period 2001-2011, my group was involved in numerous projects, leading up to a three-week mission at sea, where  real-time inversion was performed using sockets, as described in this [post](/DT-tbx-v1/blog/2021/DT-stereo/).
+
+Mathematically, we have a classical imaging inverse problem to solve:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/OAT_direct_pb_phys_modell.png' | relative_url }}" alt="" title="model imaging problem"/>
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    The imaging problem: given a source and an array where measurements are obtained, find the properties of the unknown medium.
 </div>
+
+This model is readily adapted to a realistic context of underwater sedimentology characterization, as shown below.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/OAT_invPb.png' | relative_url }}" alt="" title="real inverse problem"/>
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    The sediment characterization problem, including geoacoustics : given a source and a receiver array, where measurements are obtained, find the properties of the unknown medium, both water and seafloor.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+We have successfully performed inversion of the sediment properties and the sound-speed profile in the water layer, using an adjoint approach {% cite Hermand2006a  %}.
 
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/OAT_combo1.png' | relative_url }}" alt="" title="OAT"  data-zoomable />
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/OAT_combo2.png' | relative_url }}" alt="" title="geoacosutics inversion"  data-zoomable />
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Ocean acoustics tomography for recovering the soud-speed profile (left).  Geoacoustic inversion for recovering the sediment properties (right.) Click on images to zoom.
 </div>
 
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+References
+----------
 
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-```
+{% bibliography --cited %}
+
+

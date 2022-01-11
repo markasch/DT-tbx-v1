@@ -14,7 +14,7 @@ The objective is to develop a digital twin of a  sperm-whale in the framework of
 
 The first stages of the twin's development are described in detail in Maxence Ferrari's [thesis](https://hal.archives-ouvertes.fr/tel-03078625). 
 
-The twin will provide a complete emission-transmission-reception chain of the sperm whale's sonar system, which is known to be the most powerful in the animal kingdom. The inverse problem that we want to study entails charcterization of the biosonar source signal, its generation, its propagation inside the head---the so-callled leaky bent horn model---and then into the surrounding environment, where it is used for communication and for hunting.
+The twin will provide a complete emission-transmission-reception chain of the sperm whale's sonar system, which is known to be the most powerful in the animal kingdom. The inverse problem that we want to study entails characterization of the whale's biosonar source signal, its generation, its propagation inside the head---the so-callled leaky bent horn model---and then into the surrounding environment, where it is used for communication and for hunting.
 
 We are currently implementing a comparison between:
 
