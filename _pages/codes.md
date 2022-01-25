@@ -2,7 +2,7 @@
 layout: page
 title: codes
 permalink: /codes/
-description: Codes for all examples in the book. Open each chapter for a detailed list, or click on the Github icon for direct access to the repository.
+description: Codes for all examples in the book. Open each chapter for a detailed list, or click on the Github icon for direct access to the repository. When multi-language versions are available, they are indicated by a * after the example description.
 nav: true
 horizontal: false
 ---

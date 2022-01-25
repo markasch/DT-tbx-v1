@@ -8,12 +8,12 @@ category: part2
 github: https://github.com/markasch/DT-tbx-examples/blob/master/03sim
 ---
 
-Here are the code examples for Chapter 3.
+Here are the code examples for Chapter 3. Availability of multi-language versions is indicated by a *.
 
 ### nonlinear, linear and difference equations
-- [Example 3.4](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p04_nonlineq) solution of a nonlinear equation by various methods.
-- [Example 3.11](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p11_linsys) solution of an ill-conditioned linear system.
-- [Example 3.15](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p15_cobweb_plot.m) cobweb plot of a difference equation.
+- [Example 3.4](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p04_nonlineq) solution of a nonlinear equation by various methods.*
+- [Example 3.11](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p11_linsys) solution of an ill-conditioned linear system.*
+- [Example 3.15](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p15_cobweb_plot) cobweb plot of a difference equation.*
 
 ### ode
 - [Example 3.25](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p25_ode_unstab) solve an unstable ordinary differential equation by different methods.
@@ -38,7 +38,7 @@ Here are the code examples for Chapter 3.
 - [Example 3.45](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p45_ell_NL_add.edp) nonlinear elliptic equation with additive term.
 
 ### stochastic simulation (monte-carlo methods)
-- [Example 3.46](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p46_MC_integration) Monte-Carlo integration.
+- [Example 3.46](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p46_MC_integration) Monte-Carlo integration.*
 - [Example 3.47](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p47_MC_convg.ipynb) Monte-Carlo integration--convergence study.
 - [Example 3.48](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p48_MC_importance.ipynb) importance sampling for variance reduction.
 - [Example 3.49](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p49_MC_reject.ipynb) rejection sampling for variance reduction.
@@ -50,7 +50,7 @@ Here are the code examples for Chapter 3.
 - [Example 3.60](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p60_white_noise.m) white noise simulation.
 - [Example 3.62](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p62_MBrown1.m) Brownian motion simulation.
 - [Example 3.63](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p63_StochInt.m) Ito and Stratonovich stochastic integral evaluation.
-- [Example 3.82](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p82_sde_em) Euler-Maruyama method for a linear SDE.
+- [Example 3.82](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p82_sde_em) Euler-Maruyama method for a linear SDE.*
 - [Example 3.85](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p85_sde_ou.m) Ornstein-Uhlenbeck equation.
 - [Example 3.87](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p87_sde_ml.m) Milstein method for a nonlinear SDE.
 - [Example 3.88](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p88_spde_nagumo.ipynb) Nagumo's SPDE.
