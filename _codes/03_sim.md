@@ -16,12 +16,12 @@ Here are the code examples for Chapter 3. Availability of multi-language version
 - [Example 3.15](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p15_cobweb_plot) cobweb plot of a difference equation.*
 
 ### ode
-- [Example 3.25](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p25_ode_unstab) solve an unstable ordinary differential equation by different methods.
+- [Example 3.25](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p25_ode_unstab) solve an unstable ordinary differential equation by different methods.*
 - Example 3.28 -- see Example 3.25.
 
 ### finite difference methods
-- [Example 3.29](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p29_transport) solution of a transport equation by different methods.
-- [Example 3.30](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p30_Lap_Neumann.m) Laplace equation with Neumann boundary condition.
+- [Example 3.29](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p29_transport) solution of a transport equation by different methods.*
+- [Example 3.30](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p30_Lap_Neumann) Laplace equation with Neumann boundary condition.*
 - [Example 3.31](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p31_Laplace_2D) 2D Poisson equation in L-shaped geometry.
 - [Example 3.32](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p32_poisson_sparse_FD.ipynb) 2D Poisson equation for electrostatics with different solvers.
 - [Example 3.33](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p33_heat_CN.m) 1D heat equation with Crank-Nicolson scheme.
