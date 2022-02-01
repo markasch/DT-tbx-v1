@@ -47,9 +47,9 @@ Here are the code examples for Chapter 3. Availability of multi-language version
 - [Example 3.58](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p58_MCMC_simple.ipynb) Simple MCMC for a Gaussian posterior.
 
 ### stochastic differential equations
-- [Example 3.60](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p60_white_noise.m) white noise simulation.
-- [Example 3.62](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p62_MBrown1.m) Brownian motion simulation.
-- [Example 3.63](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p63_StochInt.m) Ito and Stratonovich stochastic integral evaluation.
+- [Example 3.60](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p60_white_noise) white noise simulation.*
+- [Example 3.62](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p62_MBrown) Brownian motion simulation.*
+- [Example 3.63](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p63_Stoch_Int) Ito and Stratonovich stochastic integral evaluation.*
 - [Example 3.82](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p82_sde_em) Euler-Maruyama method for a linear SDE.*
 - [Example 3.85](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p85_sde_ou.m) Ornstein-Uhlenbeck equation.
 - [Example 3.87](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p87_sde_ml.m) Milstein method for a nonlinear SDE.
