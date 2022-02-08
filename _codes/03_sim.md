@@ -51,7 +51,7 @@ Here are the code examples for Chapter 3. Availability of multi-language version
 - [Example 3.62](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p62_MBrown) Brownian motion simulation.*
 - [Example 3.63](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p63_Stoch_Int) Ito and Stratonovich stochastic integral evaluation.*
 - [Example 3.82](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p82_sde_em) Euler-Maruyama method for a linear SDE.*
-- [Example 3.85](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p85_sde_ou.m) Ornstein-Uhlenbeck equation.
+- [Example 3.85](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p85_sde_ou) Ornstein-Uhlenbeck equation.*
 - [Example 3.87](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p87_sde_ml.m) Milstein method for a nonlinear SDE.
 - [Example 3.88](https://github.com/markasch/DT-tbx-examples/blob/master/03sim/x3p88_spde_nagumo.ipynb) Nagumo's SPDE.
 
