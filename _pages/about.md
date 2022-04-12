@@ -13,7 +13,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-This is the companion website for **A Toolbox for Digital Twins: from Model-based to Data-driven. SIAM (2022)**. This  [book](https://www.siam.org/publications/books/book-series) provides a unique resource for all the modeling and computational tools needed to formulate, test and deploy Digital Twins. All the [codes](/DT-tbx-v1/codes/) from the book examples are available. They can also be obtained directly from my [GitHub repository](https://github.com/markasch/DT-tbx-examples/). Typos and other errors are inevitable, so please help by filling in the [Errata/Feedback](https://docs.google.com/forms/d/e/1FAIpQLSfV-DzUmItIpC3aV-aMBItX3-TmY3TWVoqh1h3ZtOVTk9EHaA/viewform) form. Your feedback is precious.
+This is the companion website for **A Toolbox for Digital Twins: from Model-based to Data-driven. SIAM (2022)**. This  [book](https://my.siam.org/Store/Product/viewproduct/?ProductId=41813926) provides a unique resource for all the modeling and computational tools needed to formulate, test and deploy Digital Twins. All the [codes](/DT-tbx-v1/codes/) from the book examples are available. They can also be obtained directly from my [GitHub repository](https://github.com/markasch/DT-tbx-examples/). Typos and other errors are inevitable, so please help by filling in the [Errata/Feedback](https://docs.google.com/forms/d/e/1FAIpQLSfV-DzUmItIpC3aV-aMBItX3-TmY3TWVoqh1h3ZtOVTk9EHaA/viewform) form. Your feedback is precious. The current list of errata can be found [here]().
 
 Here is a preview of the book's [cover](/DT-tbx-v1/assets/pdf/MN06_ASCH_COVER_B_V6.pdf).
 
@@ -25,5 +25,7 @@ Publications related to the subject of Digital Twins can be found on the  [publi
 I provide [consulting](/DT-tbx-v1/consulting/)  and [training](/DT-tbx-v1/training/)  for Digital Twins and their implementations. Please see the dedicated pages.
 
 In the [twins](/DT-tbx-v1/twins/) section, a number of models are show-cased and an updated list, with links, is provided.
+
+Please consult regularly the [blog](/DT-tbx-v1/blog/) section, where you will find updates, timely and additional material, as well as invited posts written by eminent colleagues.
 
 Links to my social media connections are available in the top- and bottom of page menus. 
