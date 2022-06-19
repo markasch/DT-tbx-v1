@@ -2,7 +2,7 @@
 layout: page
 title: list
 description: links to other twins
-img: /assets/img/list3.jpeg
+img: /assets/img/list.jpeg
 importance: 5
 category: others
 ---

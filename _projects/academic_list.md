@@ -2,7 +2,7 @@
 layout: distill
 title: list
 description: links to other academic twins
-img: /assets/img/list3.jpeg
+img: /assets/img/list.jpeg
 importance: 1
 category: academic
 ---
