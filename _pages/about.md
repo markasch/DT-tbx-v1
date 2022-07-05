@@ -20,7 +20,7 @@ Here is a preview of the book's [cover](/DT-tbx-v1/assets/pdf/MN06_ASCH_COVER_B_
 My career has covered a lot of ground: from academia to industry, passing through governmental, European and international institutions. Learning from all of these, has provided a broad persepctive of how and what mathematics can propose to society.
 For more details, please consult my [homepage](http://masch.perso.math.cnrs.fr) and recent [CV](/DT-tbx-v1/assets/pdf/Asch_CV_2021.pdf). 
 
-Publications related to the subject of Digital Twins can be found on the  [publications page](/DT-tbx-v1/publications/) page. My [previous book](http://bookstore.siam.org/fa11/) is a good source for a detailed presentation of Data Assimilation.
+Publications related to the subject of Digital Twins can be found on the  [publications page](/DT-tbx-v1/publications/) page. My [previous book](http://bookstore.siam.org/fa11/) remains a good source for a detailed presentation of Data Assimilation.
 
 I provide [consulting](/DT-tbx-v1/consulting/)  and [training](/DT-tbx-v1/training/)  for Digital Twins and their implementations. Please see the dedicated pages.
 
