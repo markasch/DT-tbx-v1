@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <meta http-equiv="refresh" content="3; url=https://markasch.github.io/DT-tbx-v1/" />
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   DT-tbx website
 
 
-  | Page not found
+  | underwater sediment mapping
 
 </title>
 <meta name="description" content="Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👥</text></svg>">
 
 <link rel="stylesheet" href="/DT-tbx-v1/assets/css/main.css">
-<link rel="canonical" href="/DT-tbx-v1/404.html">
+<link rel="canonical" href="/DT-tbx-v1/projects/OAT/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -207,12 +207,192 @@
       <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h1 class="post-title">underwater sediment mapping</h1>
+    <p class="post-description">ocean acoustic tomography</p>
   </header>
 
   <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://markasch.github.io/DT-tbx-v1/">here</a>.</p>
+    <p>Knowledge o underwater sediment properties is important in different environmental contexts. It is needed for:</p>
+
+<ul>
+  <li>sonar communications,</li>
+  <li>biodiversity monitoring (see this <a href="/DT-tbx-v1/projects/whales/">twin</a>),</li>
+  <li>detection of buried objects (see this <a href="/DT-tbx-v1/projects/flints/">twin</a>).</li>
+</ul>
+
+<p>Over the ten-year period 2001-2011, my group was involved in numerous projects, leading up to a three-week mission at sea, where  real-time inversion was performed using sockets, as described in this <a href="/DT-tbx-v1/blog/2021/DT-stereo/">post</a>.</p>
+
+<p>Mathematically, we have a classical imaging inverse problem to solve:</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/DT-tbx-v1/assets/img/OAT_direct_pb_phys_modell.png" alt="" title="model imaging problem">
+    </div>
+</div>
+<div class="caption">
+    The imaging problem: given a source and an array where measurements are obtained, find the properties of the unknown medium.
+</div>
+
+<p>This model is readily adapted to a realistic context of underwater sedimentology characterization, as shown below.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/DT-tbx-v1/assets/img/OAT_invPb.png" alt="" title="real inverse problem">
+    </div>
+</div>
+<div class="caption">
+    The sediment characterization problem, including geoacoustics : given a source and a receiver array, where measurements are obtained, find the properties of the unknown medium, both water and seafloor.
+</div>
+
+<p>We have successfully performed inversion of the sediment properties and the sound-speed profile in the water layer, using an adjoint approach <a class="citation" href="#Hermand2006a">(Hermand et al., 2006)</a>.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/DT-tbx-v1/assets/img/OAT_combo1.png" alt="" title="OAT" data-zoomable="">
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/DT-tbx-v1/assets/img/OAT_combo2.png" alt="" title="geoacosutics inversion" data-zoomable="">
+    </div>
+</div>
+<div class="caption">
+    Ocean acoustics tomography for recovering the soud-speed profile (left).  Geoacoustic inversion for recovering the sediment properties (right.) Click on images to zoom.
+</div>
+
+<h2 id="references">References</h2>
+
+<ol class="bibliography"><li>
+<div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">JASA</abbr>
+    
+  
+  </div>
+
+  <div id="Hermand2006a" class="col-sm-8">
+    
+      <div class="title">Adjoint-based acoustic inversion for the physical characterization of a shallow water environment</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Hermand, JP.,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Meyer, M.,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                <em>Asch, Mark</em>,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Berrada, M.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>J. Acoust. Soc. Am.</em>
+      
+      
+        2006
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+      <a href="https://asa.scitation.org/doi/full/10.1121/1.2197790" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">HTML</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Hermand2006a</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Adjoint-based acoustic inversion for the physical characterization of a shallow water environment}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Hermand, JP. and Meyer, M. and Asch, Mark and Berrada, M.}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{J. Acoust. Soc. Am.}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2006}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">jun</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{6}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{3860--3871}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{119}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{underwater sound, acoustic wave propagation, inverse problems, acoustic tomography, acoustic field, acoustic wave velocity, acoustic signal processing}</span><span class="p">,</span>
+  <span class="na">owner</span> <span class="p">=</span> <span class="s">{Mark}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{ASA}</span><span class="p">,</span>
+  <span class="na">timestamp</span> <span class="p">=</span> <span class="s">{2010.01.14}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{http://link.aip.org/link/?JAS/119/3860/1}</span><span class="p">,</span>
+  <span class="na">abbr</span> <span class="p">=</span> <span class="s">{JASA}</span><span class="p">,</span>
+  <span class="na">html</span> <span class="p">=</span> <span class="s">{https://asa.scitation.org/doi/full/10.1121/1.2197790}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+    
+  </div>
+</div>
+</li></ol>
+
 
   </article>
 

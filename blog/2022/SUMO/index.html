@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <meta http-equiv="refresh" content="3; url=https://markasch.github.io/DT-tbx-v1/" />
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   DT-tbx website
 
 
-  | Page not found
+  | SUMO
 
 </title>
 <meta name="description" content="Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👥</text></svg>">
 
 <link rel="stylesheet" href="/DT-tbx-v1/assets/css/main.css">
-<link rel="canonical" href="/DT-tbx-v1/404.html">
+<link rel="canonical" href="/DT-tbx-v1/blog/2022/SUMO/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -102,7 +102,7 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="/DT-tbx-v1/blog/">
               blog
               
@@ -204,17 +204,71 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      
+
+<div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h1 class="post-title">SUMO</h1>
+    <p class="post-meta">January 3, 2022</p>
   </header>
 
-  <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://markasch.github.io/DT-tbx-v1/">here</a>.</p>
+  <article class="post-content">
+    <p>In a recent <a href="link%20to%20go%20HERE???">paper</a>, we have explored the use of surrogate models (SUMO) for the optimal design of an important phase in Li-ion battery manufacturing. Our data come from simulations that have been shown to faithfully reproduce real experimental conditions. However:</p>
+
+<ol>
+  <li>The design space is very large.</li>
+  <li>The simulations are very compute-intensive and have long CPU times.</li>
+  <li>For some parameter combinations, the simulations have convergence difficulties.</li>
+</ol>
+
+<p>The challenge here is to replace the computational model by a suitable surrogate model that will:</p>
+
+<ol>
+  <li>Capture the complex underlying physico-chemistry.</li>
+  <li>Once trained, enable very rapid inferencing for optimal choice of the manufacturing parameters.</li>
+</ol>
+
+<p>In summary: we seek a digital twin of the process. Here is a schematic description of the general principles of the Surrogate Modeling process.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/DT-tbx-v1/assets/img/SUMO.jpg" alt="" title="example image">
+    </div>
+</div>
+<div class="caption">
+    General flowchart for SUMO process.
+</div>
+
+<p>The expensive steps are performed (once) offline, and then the trained model can be used in quasi-real time, or in some outer-loop optimization, as described in the <a href="???URL??">book</a>.</p>
+
+<p>In the actual case considered, electrolyte wetting and filling of an electrode, we employed a sequence of simple, unsupervised and supervised learning techniques, preceeded by an exploratory data analysis step. This is depicted in the following flowchart.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/DT-tbx-v1/assets/img/workflow-LiB.jpg" alt="" title="example image">
+    </div>
+</div>
+<div class="caption">
+    A machine learning workflow for optimal process design problems based on SUMO. Acronyms: EDA = Exploratory Data Analysis, RF = Random Forests, NN = Neural Networks, SVM = Support Vector Machines.
+</div>
+
+<p>We insist on the fact that the approach is generic, in that it can be applied to any (your) data, as is. Of course, the “devil is in the details” and you will have to tune each method at each step, depending on the nature and properties of the data. However, the guiding principles can be stated as follows:</p>
+
+<ol>
+  <li>EDA is mandatory, and its importance should not be underestimated. It is indispensable for arranging, cleaning, ordering and familiarizing oneself with the data. In addition to the basic statistical summaries and data plots, we strongly recommend to perform partial correlation analysis that in a multi-variable context can bring out causal and other groupings of variables.</li>
+  <li>Both regression and classification should be performed, in tandem–one feeding the other. The unsupervised classification method, \(k\)-means, can provide initial clustering, that is then useful for the SVM, supervised classification. Both then provide important input for the choice of explanatory variables (paramters, features) in the regression steps. A single algorithm will very rarely be able to capture reliably all the underlying physical phenomena. That is why it is always advisable to try several, and then retain the ones that are best for each predicted response variable.</li>
+  <li>Together, the computed machine learning models will provide the sought-for surrogate models.</li>
+</ol>
+
+<p>In our case, we were able to robustly predict which combinations, and groups of design variables would give optimnal battery manufacturing performances.</p>
+
+<p>An important <strong>caveat</strong> is: do not rely blindly on the performance metrics output by the ML methods. These can often be misleading and must be carefully chosen to measure what you want to achieve. It is not because you have a good accuracy, that you have a good model… Please see this <a href="/DT-tbx-v1/blog/2022/metrics/">post</a> for a more detailed explanation of this often overlooked point.</p>
+
 
   </article>
+
+  
 
 </div>
 

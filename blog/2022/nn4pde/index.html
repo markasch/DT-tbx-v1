@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <meta http-equiv="refresh" content="3; url=https://markasch.github.io/DT-tbx-v1/" />
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   DT-tbx website
 
 
-  | Page not found
+  | NN for PDEs
 
 </title>
 <meta name="description" content="Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👥</text></svg>">
 
 <link rel="stylesheet" href="/DT-tbx-v1/assets/css/main.css">
-<link rel="canonical" href="/DT-tbx-v1/404.html">
+<link rel="canonical" href="/DT-tbx-v1/blog/2022/nn4pde/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -102,7 +102,7 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="/DT-tbx-v1/blog/">
               blog
               
@@ -204,17 +204,83 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      
+
+<div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h1 class="post-title">NN for PDEs</h1>
+    <p class="post-meta">January 8, 2022</p>
   </header>
 
-  <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://markasch.github.io/DT-tbx-v1/">here</a>.</p>
+  <article class="post-content">
+    <p>In a recent <a href="/DT-tbx-v1/assets/pdf/Asch_NN_4_IP.pdf">talk</a> I attempted to review the state-of-the-art in the use of neural networks for solving direct and inverse problems based on PDEs. This topic is treated in Chapter 13 of the <a href="link???">book</a>, but is evolving at lightning speed, so I will need to update this post regularly.</p>
+
+<p>As always, my objective is to see how these approaches can be used in concrete digital twins. The potential is, IMHO, enormous. They represent, in theory and in practice, an ideal coupling of data-driven and model-based methods. Please consult the <a href="/DT-tbx-v1/blog/2021/ai4sci/">post</a> on AI for Science, for a more general viewpoint.</p>
+
+<hr>
+
+<p>The theoretical foundations for the approaches are strong:</p>
+
+<ol>
+  <li>The universal approximation property.</li>
+  <li>The “unreasonable” efficiency of automatic differetntiation.</li>
+</ol>
+<hr>
+
+<p>We will come back to these two, after formulating the problem.</p>
+
+<p>Recall that for Digital Twins, in essence, we want to model a mapping \(f\) between input variables (design parameters), \(\theta,\) and output data (observations, measurements, simulation results), \(y,\)</p>
+
+\[y = f(x; \theta),\]
+
+<p>where \(x\) represents the independent variable (space, time). For given \(\theta,\) (and \(f\)) this is the <strong>direct</strong> problem. If we know \(y\) and we seek \(\theta,\) then we need to solve an <strong>inverse</strong> problem. In real contexts, there will be an additional term \(\xi(x,t)\) to model the noise, or uncertainty,</p>
+
+\[y = f(x; \theta)  + \xi .\]
+
+<p>Solving the direct and inverse problems can be difficult, time-consuming, unreliable, in particular in the presence of noise, which is always present, though rarely taken into account. The inverse problems are notoriously complicated and for concrete problems, impossible to solve in reasonable time and with reasonable accuracy, unless one disposes of immense computational power, eg. for daily weather forecasting.</p>
+
+<p>So, the challenge is: if we have (a lot of) measurements, and if we have reliable models, can we combine the two, using machine learning to go beyond what each one, separately, can achieve? Let me reassure you, the answer is “Yes, but…”, since the recent advances are impressive, though there is “no free lunch”. Meaning, one has to work on one’s particular context, process, problem in order to obtain the promised/desired improvements.</p>
+
+<p>Let us now return to the two foundations.</p>
+
+<p>The first foundation justifies the use of <strong>simple</strong> neural networks for the approximation of a complex, nonlinear map bteween inputs and outputs. There are solid theorems that guarantee the convergence of NNs to virtually any complex functional relationship. We can then build machine leanring models based directly on these theorems, just as we have always done for model-based approximations and their computational modeling.</p>
+
+<p>The second foundation provides the means to ensure that the data-driven model also respects the underlying physics/chemistry/biology/etc. This is essential if we are to base decision-making on the outcomes of our DTs. Theoretically, this respect of the “physics” is extremely simple to implement. Let us now explain this simplicity.</p>
+
+<p>Suppose that the ML model mimimizes a loss function \(\mathcal{L}_M(w),\) where \(w\) are the parameters—weights and biases—of the neural network. Now, just add terms to the loss function that enforce the respect of the PDE and its initial/boundary conditions. That is, we seek to minimize the composite loss function</p>
+
+\[\mathcal{L}_M(w,\theta) = \mathcal{L}_M(w) + \mathcal{L}_P(\theta),\]
+
+<p>where \(\theta\) are the coefficients of the PDE. This formulation is then valid for</p>
+
+<ul>
+  <li>the direct problem, and</li>
+  <li>the inverse problem.</li>
+</ul>
+
+<p>The actual formulation of \(\mathcal{L}_P(\theta)\) is obtained using AD (automatic differentiation), just as used in the stochastic gradient minimization algorithm for finding the best NN coefficients. It’s as “easy” as that!  Ok, “easy” is in quotes, since we obtain a horrible optimization problem that usually requires some intense hyperparameter tuning, or ensembles of initializations, to converge reasonably well. But when it does, we are then in the SUMO position—see this <a href="/DT-tbx-v1/blog/2022/SUMO/">blog</a> post—where once we have completed the expensive, offline learning stage, we have an inference tool that can provide speedups of \(10^3\) or \(10^4.\) This is not a 2X or 3X speedup, but literally three to four orders of magnitude! For example, a 10 hour computation can be performed in \(0.01\) hours, or \(100\) such computations can be performed in one hour.</p>
+
+<p>For all the details and numerous examples, the following references are recommended.</p>
+
+<ol>
+  <li>Lu, Karniadakis. <a href="https://epubs.siam.org/doi/abs/10.1137/19M1274067" target="_blank" rel="noopener noreferrer">SIAM Review</a>, 2021.</li>
+  <li>Wang, Wang, Bhouri, Perdikaris. <a href="https://arxiv.org/abs/2103.10974v1" target="_blank" rel="noopener noreferrer">arXiv:2103.10974v1</a>, <a href="https://arxiv.org/abs/2106.05384" target="_blank" rel="noopener noreferrer">arXiv:2106.05384</a>, <a href="https://arxiv.org/abs/2110.01654" target="_blank" rel="noopener noreferrer">arXiv:2110.01654</a>, <a href="https://arxiv.org/abs/2110.13297" target="_blank" rel="noopener noreferrer">arXiv:2110.13297</a>
+</li>
+  <li>Mishra, Molinaro. <a href="https://arxiv.org/abs/2006.16144v2" target="_blank" rel="noopener noreferrer">arXiv:2006.16144v2</a>
+</li>
+  <li>Battacharya, Hosseini, Kovachki, Stuart. <a href="https://arxiv.org/abs/2005.03180" target="_blank" rel="noopener noreferrer">arXiv:2005.03180</a>
+</li>
+  <li>Lu, Meng, Cai, Mai, Goswami, Zhang, Karniadakis. <a href="https://arxiv.org/abs/2111.05512" target="_blank" rel="noopener noreferrer">arXiv:2111.05512</a>
+</li>
+</ol>
+
+<p>My <a href="/DT-tbx-v1/assets/pdf/Asch_NN_4_IP.pdf">talk</a> is a personal summary of the above references, in order to apply the approach to a digital twin of a  <a href="https://youtu.be/Kn_-xLzz5pg" target="_blank" rel="noopener noreferrer">sperm-whale</a> that we are developing in the framework of the national AI chair <a href="https://bioacoustics.lis-lab.fr/" target="_blank" rel="noopener noreferrer">ADSIL</a>. In the <a href="/DT-tbx-v1/twins/">twins</a> section, there is a description of the whale’s <a href="/DT-tbx-v1/projects/whales/">digital twin</a>.</p>
+
 
   </article>
+
+  
 
 </div>
 
