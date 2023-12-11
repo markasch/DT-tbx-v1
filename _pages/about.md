@@ -29,3 +29,12 @@ In the [twins](/DT-tbx-v1/twins/) section, a number of models are show-cased and
 Please consult regularly the [blog](/DT-tbx-v1/blog/) section, where you will find updates, timely and additional material, as well as invited posts written by eminent colleagues.
 
 Links to my social media connections are available in the top- and bottom of page menus. 
+
+### recent events and conferences
+
+- October 2023: Thanks to a grant from the Visiting Lecturer Program of the [IMU](https://www.mathunion.org/cdc/lecturing/volunteer-lecturer-program), I spent 2 weeks at [Caraga State University](https://www.carsu.edu.ph/) in the Philippines, where I gave 60h of graduate training on Data Assimilation and Digital Twins for Environmental Problems. All the course material can be found on the [course website](https://sites.google.com/view/csu2023)
+- October 2023: Plenary talk at the Mathematical Society of the Philippines regional meeting in Davao City, Philippines. [website](https://sites.google.com/up.edu.ph/mspdavao2023/home)
+- August 2023: Two lectures on Data Assililation and Digital Twins in the [FJOHSS](https://www.fjohss.eu/215.php) summer school in Karslruhe, Germany.
+- August 2023: Invited talk in [ICIAM 2023](https://iciam2023.org/), Tokyo, Japan.
+- June 2023: Invited talk on Digital Twins for Marine Bioacoustics, at the [ADSIL](https://bioacoustics.lis-lab.fr/) meeting in Toulon, France.
+- February 2023: Invited Speaker in a NASEM Workshop on [Digital Twins in ATmospheric, Climate and Sustainability Science](https://www.nationalacademies.org/event/02-01-2023/digital-twins-in-atmospheric-climate-and-sustainability-science-a-workshop#:~:text=The%20digital%20twin%20is%20an,weather%20conditions%2C%20among%20other%20applications.), Washington DC, USA.
