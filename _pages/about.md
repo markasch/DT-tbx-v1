@@ -37,4 +37,6 @@ Links to my social media connections are available in the top- and bottom of pag
 - August 2023: Two lectures on Data Assililation and Digital Twins in the [FJOHSS](https://www.fjohss.eu/215.php) summer school in Karslruhe, Germany.
 - August 2023: Invited talk in [ICIAM 2023](https://iciam2023.org/), Tokyo, Japan.
 - June 2023: Invited talk on Digital Twins for Marine Bioacoustics, at the [ADSIL](https://bioacoustics.lis-lab.fr/) meeting in Toulon, France.
+- June 2023: Kick-off of the 40M€ [NumPEx](https://numpex.org/) project, in Perros-Guirrec, France.
+- March 2023: Mini-symposium "[Machine Learning and Digital Twins](https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=75745)" organizer and speaker in [SIAM CSE 2023](https://www.siam.org/conferences/cm/program/cse23) conference, in Amsterdam, Netherlands.
 - February 2023: Invited Speaker in a NASEM Workshop on [Digital Twins in ATmospheric, Climate and Sustainability Science](https://www.nationalacademies.org/event/02-01-2023/digital-twins-in-atmospheric-climate-and-sustainability-science-a-workshop#:~:text=The%20digital%20twin%20is%20an,weather%20conditions%2C%20among%20other%20applications.), Washington DC, USA.
