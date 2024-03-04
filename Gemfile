@@ -14,3 +14,5 @@ group :jekyll_plugins do
     gem 'unicode_utils'
     gem 'webrick'
 end
+
+gem "kramdown-syntax-coderay", "~> 1.0"
