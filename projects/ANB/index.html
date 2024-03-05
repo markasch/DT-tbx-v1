@@ -12,7 +12,7 @@
   DT-tbx website
 
 
-  | blog
+  | anti-noise barrier
 
 </title>
 <meta name="description" content="Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👥</text></svg>">
 
 <link rel="stylesheet" href="/DT-tbx-v1/assets/css/main.css">
-<link rel="canonical" href="/DT-tbx-v1/blog/">
+<link rel="canonical" href="/DT-tbx-v1/projects/ANB/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -102,18 +102,14 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/DT-tbx-v1/blog/">
               blog
-              
-              <span class="sr-only">(current)</span>
               
             </a>
           </li>
           
           <!-- Other pages -->
-          
-          
           
           
           
@@ -190,8 +186,8 @@
           
           
           
-            <div class = "toggle-container">
-              <a id = "light-toggle">
+            <div class="toggle-container">
+              <a id="light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
               </a>
@@ -210,56 +206,173 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>DT-tbx Blog</h1>
-    <h2>supplementary, and timely material for the book</h2>
+  <header class="post-header">
+    <h1 class="post-title">anti-noise barrier</h1>
+    <p class="post-description">fractal acoustic absorption</p>
+  </header>
+
+  <article>
+    <p>The following images show the passage from mathematical model, to simulations, to reality. In between, experimental verification of the localization was performed in the lab, and real acoustic tests of the pre-final product were perfomed in an anechoic chamber as well as in an exterior setting.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/DT-tbx-v1/assets/img/ANB_Geoms.jpg" alt="" title="example image" data-zoomable="">
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/DT-tbx-v1/assets/img/ANB_ConeNeu.jpg" alt="" title="example image" data-zoomable="">
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/DT-tbx-v1/assets/img/ANB_spec.jpg" alt="" title="example image" data-zoomable="">
+    </div>
+</div>
+<div class="caption">
+    Left: the PDE model. Center: spectral power of a localized mode. Right: acoustic performance of the manufactured wall. (Click to zoom.)
+</div>
+
+<p>A commercial product patented under the name Fractal Wall®, based on this twin, absorbs on average 98% of the incident acoustic energy in the audio spectrum, for normalized traffic noise.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/DT-tbx-v1/assets/img/ANB_wall_combo.jpg" alt="" title="example image">
+    </div>
+</div>
+<div class="caption">
+    Overview of the fractal wall, its installation and its structure. The material used is "wood-concrete".
+</div>
+
+<p>Details of the twin and simulation results can be found in our paper <a class="citation" href="#Felix2007">(Felix et al., 2007)</a> and the ASA <a href="/DT-tbx-v1/assets/pdf/FelixASA2005.pdf">presentation</a>.</p>
+
+<h2 id="references">References</h2>
+
+<ol class="bibliography"><li>
+<div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">JSV</abbr>
+    
+  
   </div>
 
+  <div id="Felix2007" class="col-sm-8">
+    
+      <div class="title">Localization and increased damping in irregular acoustic cavities</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Felix, Simon,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                <em>Asch, Mark</em>,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Filoche, Marcel,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Sapoval, Bernard
+                
+              
+            
+          
+        
+      </div>
 
-  <ul class="post-list">
+      <div class="periodical">
+      
+        <em>Journal of Sound and Vibration</em>
+      
+      
+        2007
+      
+      </div>
     
-      <li>
-        <h3><a class="post-title" href="/DT-tbx-v1/blog/2023/sciml_dt/">Scientific machine learning for DTs</a></h3>
-        <p class="post-meta">March 7, 2023</p>
-        <p>machine learning, digital twins</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/DT-tbx-v1/blog/2022/linclass/">Linear methods for classification</a></h3>
-        <p class="post-meta">April 15, 2022</p>
-        <p>logistic regression, naive Bayes and LDA</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/DT-tbx-v1/blog/2022/nn4pde/">NN for PDEs</a></h3>
-        <p class="post-meta">January 8, 2022</p>
-        <p>neural networks for direct and inverse pde problems</p>
-      </li>
-    
-  </ul>
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
+    <div class="links">
     
-      
-        <li class="page-item active"><a class="page-link" href="/DT-tbx-v1/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/DT-tbx-v1/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/DT-tbx-v1/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      
     
-    <li class="page-item ">
-      <a class="page-link" href="/DT-tbx-v1/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+      <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.329.2965&amp;rep=rep1&amp;type=pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">HTML</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Felix2007</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Localization and increased damping in irregular acoustic cavities}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Felix, Simon and Asch, Mark and Filoche, Marcel and Sapoval, Bernard}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Journal of Sound and Vibration}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2007}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{965--976}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{4-5}</span><span class="p">,</span>
+  <span class="na">owner</span> <span class="p">=</span> <span class="s">{mkaa}</span><span class="p">,</span>
+  <span class="na">abbr</span> <span class="p">=</span> <span class="s">{JSV}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">html</span> <span class="p">=</span> <span class="s">{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.329.2965&amp;rep=rep1&amp;type=pdf}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+    
+  </div>
+</div>
+</li></ol>
 
 
+  </article>
 
 </div>
 
@@ -270,8 +383,8 @@
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    &copy; Copyright 2024 Mark A. Asch.
-    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+    © Copyright 2024 Mark A. Asch.
+    Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
 
     
     

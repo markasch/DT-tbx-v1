@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <meta http-equiv="refresh" content="3; url=https://markasch.github.io/DT-tbx-v1/" />
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   DT-tbx website
 
 
-  | Page not found
+  | R-squared and model performance evaluation
 
 </title>
 <meta name="description" content="Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👥</text></svg>">
 
 <link rel="stylesheet" href="/DT-tbx-v1/assets/css/main.css">
-<link rel="canonical" href="/DT-tbx-v1/404.html">
+<link rel="canonical" href="/DT-tbx-v1/blog/2022/metrics/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -102,7 +102,7 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="/DT-tbx-v1/blog/">
               blog
               
@@ -204,17 +204,107 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      
+
+<div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h1 class="post-title">R-squared and model performance evaluation</h1>
+    <p class="post-meta">January 7, 2022</p>
   </header>
 
-  <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://markasch.github.io/DT-tbx-v1/">here</a>.</p>
+  <article class="post-content">
+    <p>As mentioned in the <a href="/DT-tbx-v1/blog/2022/SUMO/">post</a> on practical surrogate modeling, special care should be taken when using and reporting performance metrics. We will discuss three major points here:</p>
+
+<ol>
+  <li>Use of \(p\)-values for regression coefficients.</li>
+  <li>Use of \(R^2\) for regression analysis.</li>
+  <li>Use of accuracy for classification results.</li>
+</ol>
+
+<p>These have already been discussed around the web, and Point #1 has received particular attention, even being the subject of a major <a href="https://amstat.tandfonline.com/doi/full/10.1080/00031305.2016.1154108#.Vt2XIOaE2MN" target="_blank" rel="noopener noreferrer">declaration</a> of the American Statistical Society. Their advice (in a nutshell): do <strong>NOT</strong> use \(p\)-values at all. Their (politically-correct) conclusion is:</p>
+
+<blockquote>
+	Good statistical practice, as an essential component of good scientific practice, emphasizes principles of good study design and conduct, a variety of numerical and graphical summaries of data, understanding of the phenomenon under study, interpretation of results in context, complete reporting and proper logical and quantitative understanding of what data summaries mean. No single index should substitute for scientific reasoning.
+</blockquote>
+<p>All is said in the last phrase: “No <strong>single</strong> index should substitute for scientific <strong>reasoning</strong>.” Here, I would replace the descriptive “scienitific” by “objective reasoning in context.”</p>
+
+<h3 id="point-2">Point 2</h3>
+<p>So, what about Point #2? Is \(R^2\) also dangerous? The answer is, yes - please see C. Shalizi’s <a href="http://bactra.org/" target="_blank" rel="noopener noreferrer">writings</a> on the subject. He, and others, recommend not to use \(R^2\) either. Here, I will explain why not to, and under which circumstances it can still be useful. But the principle of “no single index” remains valid, so we should definitely base our evaluation on supplementary, or alternative metrics.</p>
+
+<p>What is so “dangerous” about \(R^2\)? Well, the list is quite long - see this <a href="https://data.library.virginia.edu/is-r-squared-useless/" target="_blank" rel="noopener noreferrer">presentation</a>. In summary:</p>
+
+<ul>
+  <li>\(R^2\) does not measure goodness of fit.</li>
+  <li>\(R^2\) does not measure predictive error.</li>
+  <li>\(R^2\) does not allow you to compare models using transformed responses.</li>
+  <li>\(R^2\) does not measure how one variable explains another, contrary to its usual definition.</li>
+</ul>
+
+<p>On the positive side, \(R^2\) can be used for:</p>
+
+<ol>
+  <li>Determining whether a change of explanatory variable improves the fit.</li>
+  <li>Comparing multi-variable models with different subsets of explanatory variables.</li>
+  <li>Indicating collinearity when both the \(p\)-value and \(R^2\) are small.</li>
+</ol>
+
+<p>What are the alternative, or supplementary metrics that should be used here? There is general agreement that the use of a simple error metric, together with a visual appraisal based on a predicted vs. actual values plot is a good path to follow. Usually we use an \(L_1\) ot \(L_2\) based metric, such as</p>
+
+<ul>
+  <li>MAE = mean absolute error</li>
+  <li>MSE = mean squared error</li>
+  <li>RMSE = root mean squared error</li>
+</ul>
+
+<p>defined as</p>
+
+\[\mathrm{MAE} = \frac{1}{n}\sum_{i=1}^{n} |y_i - \hat{y}_i  | ,\]
+
+\[\mathrm{MSE} = \frac{1}{n}\sum_{i=1}^{n} (y_i - \hat{y}_i)^2 ,\]
+
+\[\mathrm{RMSE} = \sqrt{\frac{1}{n}\sum_{i=1}^{n} (y_i - \hat{y}_i)^2} ,\]
+
+<p>where \(y_i\) are the actual and \(\hat{y}_i\) are the predicted values of the response \(y.\)</p>
+
+<h3 id="point-3">Point 3</h3>
+<p>Finally, for point #3, the global accuracy of a classifictaion method is usually reported by the ratio of good classifications divided by the total number of (test) samples. That is, in the confusion (truth) table of predicted vs. true labels, we sum the diagonal elements and divide by the sum of all the elements in the matrix,</p>
+
+\[a = \frac{\sum_{i=1}^K m_{ii}}{\sum_{i,j=1}^K m_{ij}} ,\]
+
+<p>where there are \(K\) classes.</p>
+
+<p>The overall accuracy,  usually reported for classification methods, can be very misleading. We recall its definition in the binary case (2 classes, Positive or Negative),</p>
+
+\[\mathrm{accuracy} = \frac{ \mathrm{TP}+ \mathrm{TN}}{ \mathrm{TP}+ \mathrm{TN} +  \mathrm{FP}+ \mathrm{FN}},\]
+
+<p>the proportion of true positive and negative classifications divided by the total number of samples—true and false positives and negatives. This is a good metric only for the case where the classes are balanced, i.e. we have approximately the same number of samples in each class. For example, if class A has 95 members and class B has 5, then by simply supposing that <em>all</em> the samples are A, we obtain an accuracy of \(0.95.\) We have not measured the accuracy of the method itself. For this, we must resort to the quantities known as precision and recall (known as ``sensitivity,’’ in the binary classification case), or their harmonic mean, the \(F_1\) score. Let us recall the definitions and see which one should be used in a particular context. The precision measures the proportion of correct positive classifications, TP, among all the positives identified, TP plus FP,</p>
+
+\[\mathrm{precision} = \frac{ \mathrm{TP}}{ \mathrm{TP}+  \mathrm{FP}}.\]
+
+<p>This metric should be used when the cost of a false positive is high, and we want to avoid these FPs as much as possible—think of the case of preventative maintenance, where the cost of halting and repairing a machine, unnecessarily, is too high.</p>
+
+<p>The recall metric gives the number of positive cases correctly identified out of the total number of positives in the dataset,</p>
+
+\[\mathrm{recall} = \frac{ \mathrm{TP}}{ \mathrm{TP} + \mathrm{FN}}.\]
+
+<p>This metric is better suited to contexts where it is important to identify as many positives as possible—think of the case where the failure of a critical component in a machine could have disastrous consequences. Finally, the \(F_1\) score, defined as</p>
+
+\[F_1  = \frac{ 2}{ \mathrm{recall}^{-1}  + \mathrm{precision}^{-1} },\]
+
+<p>provides a balanced metric, between recall and precision. One should always extract a detailed report form the model, where these quantities are displayed, for each class. Then, better conclusions can be made, taking into account</p>
+
+<ul>
+  <li>class imbalances,</li>
+  <li>context-dependent gravity of the different accuracies.</li>
+</ul>
+
+<p>My colleague, Gaël Varoquaux, director of the <a href="https://scikit-learn.fondation-inria.fr/home/" target="_blank" rel="noopener noreferrer">scikit-learn foundation</a>, has an excellent <a href="http://gael-varoquaux.info/interpreting_ml_tuto/#" target="_blank" rel="noopener noreferrer">tutorial</a> on his site, entitled “Understanding and diagnosing your machine-learning models” that has a section on metrics for judging the success of a model.</p>
+
 
   </article>
+
+  
 
 </div>
 

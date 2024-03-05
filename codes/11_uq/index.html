@@ -12,7 +12,7 @@
   DT-tbx website
 
 
-  | blog
+  | chapter 11
 
 </title>
 <meta name="description" content="Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👥</text></svg>">
 
 <link rel="stylesheet" href="/DT-tbx-v1/assets/css/main.css">
-<link rel="canonical" href="/DT-tbx-v1/blog/">
+<link rel="canonical" href="/DT-tbx-v1/codes/11_uq/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -102,18 +102,14 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/DT-tbx-v1/blog/">
               blog
-              
-              <span class="sr-only">(current)</span>
               
             </a>
           </li>
           
           <!-- Other pages -->
-          
-          
           
           
           
@@ -190,8 +186,8 @@
           
           
           
-            <div class = "toggle-container">
-              <a id = "light-toggle">
+            <div class="toggle-container">
+              <a id="light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
               </a>
@@ -210,56 +206,72 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>DT-tbx Blog</h1>
-    <h2>supplementary, and timely material for the book</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">chapter 11</h1>
+    <p class="post-description">Bayes and uncertainty quantification</p>
+  </header>
+
+  <article>
+    <p>Here are the code examples for Chapter 11.</p>
+
+<h3 id="bayesian-estimation">Bayesian estimation</h3>
+<ul>
+  <li>
+<a href="https://github.com/markasch/DT-tbx-examples/blob/master/11uq/x11p5_bayes_grid_binom.R" target="_blank" rel="noopener noreferrer">Example 11.5</a> Bayesian inference for binomial random variable (influence of priors).</li>
+  <li>
+<a href="https://github.com/markasch/DT-tbx-examples/blob/master/11uq/x11p7_bayes_binomial_beta.ipynb" target="_blank" rel="noopener noreferrer">Example 11.7</a> Bayesian inference for binomial random variable with beta conjugate priors.</li>
+  <li>
+<a href="https://github.com/markasch/DT-tbx-examples/blob/master/11uq/x11p8_bayes_beta_binom_epidemic.R" target="_blank" rel="noopener noreferrer">Example 11.8</a> Bayesian inference for epidemics.</li>
+</ul>
+
+<h3 id="bayesian-regression">Bayesian regression</h3>
+<ul>
+  <li>
+<a href="https://github.com/markasch/DT-tbx-examples/blob/master/11uq/x11p10_bayes_gaussian_product.m" target="_blank" rel="noopener noreferrer">Example 11.10</a> Bayesian inference with Gaussian products.</li>
+  <li>
+<a href="https://github.com/markasch/DT-tbx-examples/blob/master/11uq/x11p12_bayes_air_qual.R" target="_blank" rel="noopener noreferrer">Example 11.12</a> Bayesian inference of a mean for air quality data.</li>
+  <li>
+<a href="https://github.com/markasch/DT-tbx-examples/blob/master/11uq/x11p13_bayes_lin_reg.ipynb" target="_blank" rel="noopener noreferrer">Example 11.13</a> Bayesian inference for a multivariate Gaussian (linear regression).</li>
+  <li>
+<a href="https://github.com/markasch/DT-tbx-examples/blob/master/11uq/x11p14_bayes_pendulum.m" target="_blank" rel="noopener noreferrer">Example 11.14</a> Bayesian inference for parameters of a noisy pendulum.</li>
+  <li>
+<a href="https://github.com/markasch/DT-tbx-examples/blob/master/11uq/x11p15_bayes_reg_diabetes.R" target="_blank" rel="noopener noreferrer">Example 11.15</a> Bayesian regression and model reduction for diabetes data.</li>
+  <li>
+<a href="https://github.com/markasch/DT-tbx-examples/blob/master/11uq/x11p17_gp_sine.py" target="_blank" rel="noopener noreferrer">Example 11.17</a> Gaussian process regression for a sine function.</li>
+</ul>
+
+<h3 id="bayesian-filters">Bayesian filters</h3>
+<ul>
+  <li>
+<a href="https://github.com/markasch/DT-tbx-examples/blob/master/11uq/x11p18_bayes_lin_reg_multi.ipynb" target="_blank" rel="noopener noreferrer">Example 11.18</a> Bayesian sequential regression for a multivariate Gaussian.</li>
+  <li>
+<a href="https://github.com/markasch/DT-tbx-examples/blob/master/11uq/x11p19_bayes_sequential.m" target="_blank" rel="noopener noreferrer">Example 11.19</a> Bayesian sequential estimation of 2d coordinates.</li>
+</ul>
+
+<h3 id="bayesian-inverse-problems">Bayesian inverse problems</h3>
+<ul>
+  <li>
+<a href="https://github.com/markasch/DT-tbx-examples/blob/master/11uq/x11p21_one_d_heat_ip.m" target="_blank" rel="noopener noreferrer">Example 11.21</a> Bayesian inversion for 1d heat equation.</li>
+</ul>
+
+<h3 id="bayesian-optimization">Bayesian optimization</h3>
+<ul>
+  <li>
+<a href="https://github.com/markasch/DT-tbx-examples/blob/master/11uq/x11p22_bayes_opt_1d.ipynb" target="_blank" rel="noopener noreferrer">Example 11.22</a> Bayesian optimization of a 1d function.</li>
+</ul>
+
+<h3 id="probabilistic-programming">probabilistic programming</h3>
+<ul>
+  <li>
+<a href="https://github.com/markasch/DT-tbx-examples/blob/master/11uq/x11p23_bayes_bern_beta_mc.ipynb" target="_blank" rel="noopener noreferrer">Example 11.23</a> Bayesian inference of a proportion.</li>
+  <li>
+<a href="https://github.com/markasch/DT-tbx-examples/blob/master/11uq/x11p24_bayes_lin_reg_pp.ipynb" target="_blank" rel="noopener noreferrer">Example 11.24</a> Bayesian linear regression.</li>
+  <li>
+<a href="https://github.com/markasch/DT-tbx-examples/blob/master/11uq/x11p25_bayes_ode_mcmc.ipynb" target="_blank" rel="noopener noreferrer">Example 11.25</a> Bayesian inverse problems for ordinary differential equations.</li>
+</ul>
 
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/DT-tbx-v1/blog/2023/sciml_dt/">Scientific machine learning for DTs</a></h3>
-        <p class="post-meta">March 7, 2023</p>
-        <p>machine learning, digital twins</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/DT-tbx-v1/blog/2022/linclass/">Linear methods for classification</a></h3>
-        <p class="post-meta">April 15, 2022</p>
-        <p>logistic regression, naive Bayes and LDA</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/DT-tbx-v1/blog/2022/nn4pde/">NN for PDEs</a></h3>
-        <p class="post-meta">January 8, 2022</p>
-        <p>neural networks for direct and inverse pde problems</p>
-      </li>
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/DT-tbx-v1/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/DT-tbx-v1/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/DT-tbx-v1/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/DT-tbx-v1/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
-
-
+  </article>
 
 </div>
 
@@ -270,8 +282,8 @@
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    &copy; Copyright 2024 Mark A. Asch.
-    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+    © Copyright 2024 Mark A. Asch.
+    Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
 
     
     
