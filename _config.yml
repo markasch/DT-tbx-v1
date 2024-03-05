@@ -116,6 +116,7 @@ news_limit: 5
 markdown: kramdown
 highlighter: rouge
 #highlight_theme: github  # https://github.com/jwarby/jekyll-pygments-themes
+highlight theme: monokai
 kramdown:
   input: GFM
   syntax_highlighter_opts:
